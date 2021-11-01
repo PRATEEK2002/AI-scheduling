@@ -11,7 +11,8 @@ Created on Thu Oct 31 21:37:05 2019
 
 @author: Prateek Sharma
 """
-
+print("prateek is testing 3")
+'''
 import tkinter as tk
 adjlist=[]
 domain=[]
@@ -183,10 +184,7 @@ def revise(domain, xi, xj):
             m.append(domain[xi-1][i])
             
             revised=True
-    '''            
-    for i in range(len(m)):
-        domain[xi-1].pop(m[i])
-''' 
+
    # print("m")
   #  print(m)
     for i in range(len(m)):
@@ -238,21 +236,7 @@ e2.grid(row=1, column=1)
 
 g = ""
 no = ""
-'''
-root = tk.Tk()
-main_canvas = tk.Canvas(root, height = 800, width = 800)
-grid1=[0]*5
-grid2=[0]*5
-grid=4
-rectmar = 10
-start = 50
-grid_size = 50
-
-def create_grid():
-    for i in range(grid+1):
-        grid1[i]=main_canvas.create_line(start+i*grid_size, start, start+i*grid_size, start+grid_size*grid)
-        grid2[i]=main_canvas.create_line(start, start+i*grid_size, start+grid_size*grid ,start+i*grid_size)
-'''        
+     
 def splitt(st):
     st=st.split(',')
     for i in range(len(st)):
@@ -346,12 +330,7 @@ def gui(g, master,no):
             adjlist1=readfun(adj,g,conslist)
             assgn=createassgn(no)
             
-            '''
-                if(dfs_bt(assgn,adjlist1,dadj)):
-                    print(assgn)   
-                else:
-                    print("hi")
-            '''
+
             master.destroy()
             root = tk.Tk()
             main_canvas = tk.Canvas(root, height = 800, width = 800)
@@ -507,16 +486,7 @@ def gui(g, master,no):
         
         
         
-        '''
-        conslist=cons(no)
-        adjlist1=readfun(adj,g,conslist)
-        assgn=createassgn(no)
-        if(dfs_bt(assgn,adjlist1)):
-            print(assgn)   
-        else:
-            print("hi") 
-'''
-        
+
         
         
     b2 = tk.Button(master, text = "enter", command = new1)
@@ -623,14 +593,7 @@ def dfbt():
     s2=s2+"seconds"
     ss=ss+s
     main_canvas.create_text(tx,ty+ss,text=s2,anchor="nw",fill='red') 
-    '''
-    s2="R2::MEMORY OF A NODE---"
-    s2=s2+str(nodemem)
-    s2=s2+" "
-    s2=s2+"Bytes"
-    ss=ss+s
-    main_canvas.create_text(tx,ty+ss,text=s2,anchor="nw",fill='red') 
-    '''
+  
     nodemem=26
     s2="R6::NUMBER OF NODES IN AC3---"
     s2=s2+str(nodemem)
@@ -745,14 +708,7 @@ def dfac():
     s2=s2+"seconds"
     ss=ss+s
     main_canvas.create_text(tx,ty+ss,text=s2,anchor="nw",fill='red') 
-    '''
-    s2="R2::MEMORY OF A NODE---"
-    s2=s2+str(nodemem)
-    s2=s2+" "
-    s2=s2+"Bytes"
-    ss=ss+s
-    main_canvas.create_text(tx,ty+ss,text=s2,anchor="nw",fill='red') 
-    '''
+
     nodemem=26
     s2="R6::NUMBER OF NODES IN AC3---"
     s2=s2+str(nodemem)
@@ -787,3 +743,4 @@ bb2 = tk.Button(master, text = "AC3 with default values", command = dfac)
 bb2.grid(row=4,column=1)
 
 tk.mainloop()
+'''
